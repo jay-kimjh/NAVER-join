@@ -1,0 +1,147 @@
+.fieldbox {
+    margin-bottom: 1.6em;
+}
+
+label p {
+    float: none;
+    width: auto;
+}
+
+.inputbox {
+    margin-top: 7px;
+    background-color: white;
+    border: 1px solid #dadada;
+    padding: 10px 12px;
+    overflow: auto;
+/*    cursor: pointer;*/
+}
+.inputbox input {
+    height: 1.8em;
+    border: none;
+    outline: none;
+    float: left;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.inputbox div {
+    height: 1.8em;
+    line-height: 1.8em;
+    float: right;
+    color: #8e8e8e;
+    font-size: 1.2em;
+}
+.inputbox div>img {
+    width: 26px;
+    vertical-align: middle;
+}
+.inputbox div>span {
+    vertical-align: middle;
+}
+
+.tribox {
+    overflow: auto;
+}
+.tribox .inputbox {
+    float: left;
+    margin-right: 10px;
+    width: calc((100% - 20px) / 3)
+}
+.tribox .inputbox:last-of-type {
+    margin-right: 0;
+}
+.tribox .inputbox input {
+    width: 100%;
+}
+.inputbox select {
+    height: 1.8em;
+    font-size: 1.2em;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+#gender input {
+    display: none;
+}
+#gender .inputbox {
+    text-align: center;
+/*    height: 50px;*/
+    line-height: 30px;
+    font-size: 1.2em;
+}
+
+.inputboxact {
+    border-color: #03c75a;
+}
+.radiochk {
+    background-color: #03c75a;
+    color: white;
+    font-weight: bold;
+}
+.text-red {color: red;}
+.text-green {color: #08a600;}
+.warn {
+    margin-top: 0.5em;
+}
+
+#phonenum, #postnum {
+    overflow: auto;
+}
+#phonenum .inputbox,
+#postnum .inputbox {
+    float: left;
+    width: calc(100% - 122px);
+    margin-right: 7px;
+}
+#veribtn,
+#postnum button{
+    float: left;
+    width: 115px;
+    height: 50px;
+    margin-top: 7px;
+    border: none;
+    cursor: pointer;
+}
+.disinput, .disinput input {
+    background-color: #f7f7f7;
+}
+
+#ex {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    margin-left: 3px;
+}
+#ex::before,
+#ex::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: red;
+    left: 50%;
+    top: 50%;
+}
+#ex::before {
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+#ex::after {
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.border-red {
+    border-color: red;
+}
+
+#joinbtn {
+    background-color: #03c75a;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    height: 50px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 30px 0;
+}

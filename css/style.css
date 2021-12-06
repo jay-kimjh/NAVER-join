@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "dotum", "Helvatica", sans-serif;
+    font-size: 0.75em;
+/*        1em은 16px이다. 네이버는 12px을 쓰고 있기 때문에 em을 이용하여 12px로 만들었다. - px을 직접 사용하는 것은 좋지 않기 때문에 비례를 이용하여 크기를 지정하는 것이 좋다.*/
+    color: #333;
+    background-color: #f5f6f7;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.cen1 {
+    max-width: 768px;
+    margin: auto;
+}
+.cen2 {
+    max-width: 460px;
+    margin: auto;
+}
+
+#lang {
+    width: 95px;
+    height: 30px;
+    border: 1px solid #dadada;
+    float: right;
+    margin-top: 16px;
+    margin-right: 16px;
+    position: relative;
+    cursor: pointer;
+}
+#langbtn {
+    height: 100%;
+    padding-left: 0.6em;
+    line-height: 30px;
+    background-image: url(../images/m_sp_00_common_b64fc3c2.png);
+    background-repeat: no-repeat;
+    background-size: auto 9px;
+    background-position: calc(100% - 8px) center;
+}
+#langlist {
+    position: absolute;
+    top: 1;
+    left: -1px;
+    width: calc(100% + 2px);
+    border: 1px solid #dadada;
+    background-color: #f5f6f7;
+    padding: 1em 0.8em;
+    display: none;
+}
+#langlist>a {
+    display: block;
+    margin: 0.4em 0;
+}
+
+#hlogo {
+    width: 240px;
+    margin: auto;
+    padding-top: 12px;
+    padding-bottom: 44px;
+    clear: both;
+}
+#hlogo a {
+    display: block;
+    width: 240px;
+    height: 44px;
+    background-image: url(../images/m_naver_logo_20191126.png);
+    background-size: 100%;
+}
+
+#total {
+    display: block;
+    padding-bottom: 40px;
+}
+label input[type="checkbox"] {
+    display: none;
+}
+.chkbox {
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/pc_chcek_off_s_20.png);
+    float: left;
+    margin-right: 8px;
+    margin-top: -2px;
+}
+.checked {
+    background-image: url(../images/pc_chcek_on_s_20.png);
+}
+#total .chkbox {
+    width: 24px;
+    height: 24px;
+    margin-top: 4px;
+    background-image: url(../images/pc_check_off_24.png);
+}
+#total .checked {
+    background-image: url(../images/pc_check_on_l_24.png);
+}
+label p {
+    font-size: 1.17em;
+    font-weight: bold;
+    float: left;
+    width: calc(100% - 28px);
+}
+#total label p {
+    width: calc(100% - 32px);
+}
+
+.agree {
+    display: block;
+    padding-top: 30px;
+}
+.terms {
+    display: block;
+    position: relative;
+    overflow: auto;
+    height: 88px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    padding: 12px;
+    border: 1px solid #dadada;
+    background: #fff;
+    float: left;
+}
+.agree>div>p {
+    padding-bottom: 10px;
+    color: #666;
+}
+.terms>p:last-of-type {
+    padding-bottom: 0;
+}
+.terms>ul {
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: #666;
+}
+.terms a {
+    color: #08a600;
+}
+.terms a:hover {
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+.black {
+    color: black;
+}
+.bigterm {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.text-primary {
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #08a600;
+}
+.text-secondary {
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #8e8e8e;
+}
+.last-terms {
+    float: left;
+    margin-top: 8px;
+}
+#kids {
+    float: right;
+    width: 95px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid #08a600;
+    font-weight: normal;
+    font-size: 1em;
+    background-color: #fff;
+    transform: translateY(-5px);
+}
+#kidslabel {
+    width: calc(100% - (28px + 95px));
+}
+
+#cancel, #submit1 {
+    width: calc((100% - 8px) / 2);
+    height: 55px;
+    float: left;
+}
+#cancel {margin-right: 8px}
+
+#reqwarn {
+    color: red;
+    display: none;
+}
